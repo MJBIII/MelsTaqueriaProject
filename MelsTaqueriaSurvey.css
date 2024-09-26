@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Simple and clean font */
+    background-color: #f0f8ff; /* Light blue background for freshness */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header Styles */
+h1 {
+    color: #e63946; /* Red for the header */
+    text-align: center; /* Center the header */
+    font-size: 3em; /* Larger font size for emphasis */
+    margin-bottom: 10px; /* Spacing below the header */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+/* Centered Introduction */
+.introduction {
+    text-align: center; /* Center the introduction */
+    font-size: 1.5em; /* Medium font size */
+    color: #007f5c; /* Green for the introduction */
+    margin-bottom: 20px; /* Space below the introduction */
+}
+
+/* Form Styles */
+form {
+    border: 2px solid #f1faee; /* Light border for contrast */
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px; /* Increased padding for comfort */
+    border-radius: 15px; /* Rounded corners */
+    max-width: 600px; /* Limit width */
+    margin: auto; /* Center the form */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Label Styles */
+label {
+    font-weight: bold; /* Bold labels */
+    margin-top: 10px; /* Spacing above labels */
+    display: block; /* Block display for labels */
+    color: #333; /* Dark color for labels */
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%; /* Full width */
+    padding: 15px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space between fields */
+    border: 2px solid #007f5c; /* Dark green border */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth border transition */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #e63946; /* Change border color on focus */
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+    background-color: #f1faee; /* Light background for button */
+    color: #007f5c; /* Dark green text on button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1.2em; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    width: 100%; /* Full width */
+}
+
+input[type="submit"]:hover {
+    background-color: #007f5c; /* Dark green on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    form {
+        padding: 20px; /* Less padding on small screens */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Smaller header size */
+    }
+
+    .introduction {
+        font-size: 1.3em; /* Smaller introduction text */
+    }
+}

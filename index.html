@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mel's Taqueria Survey Form</title>
+    <link rel="stylesheet" href="MelsTaqueriaSurvey.css">
+</head>    
+<body>
+    <h1 id="title">Mel's Taqueria Survey Form</h1>
+    <div class="introduction">
+        <h2>Please fill out the survey form below</h2>
+    </div>
+
+    <form id="survey-form">
+        <label id="name-label" for="name">Name:
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </label>
+        <label id="email-label" for="email">Email:
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </label>
+        <label id="number-label" for="number">Age:
+            <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max ="100" required>
+        </label>
+        <label for="dropdown">Select Country of Origin:
+            <select id="dropdown" name="option" required>
+                <option value="option0" disabled selected>Select country of origin</option>
+                <option value="option1">United States of America</option>
+                <option value="option2">Mexico</option>
+                <option value="option3">Canada</option>
+            </select>
+        </label>
+
+        <fieldset>
+            <legend>Would you recommend Mel's Taqueria to a friend?</legend>
+            <label>
+                <input type="radio" name="choice" id="radio1" value="option1" required>Definitely
+            </label>
+            <label>
+                <input type="radio" name="choice" id="radio2" value="option2" required>Maybe
+            </label>
+            <label>
+                <input type="radio" name="choice" id="radio3" value="option3" required>Not sure
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What is your favorite menu item? (Select any that apply)</legend>
+            <label>
+                <input type="checkbox" id="checkbox1" name="apply" value="apply1">Tacos al pastor
+            </label>
+            <label>
+                <input type="checkbox" id="checkbox2" name="apply" value="apply2">Carne asada tacos
+            </label>
+            <label>
+                <input type="checkbox" id="checkbox3" name="apply" value="apply3">Barbacoa tacos
+            </label>
+            <label>
+                <input type="checkbox" id="checkbox4" name="apply" value="apply4">Tacos rojos
+            </label>
+        </fieldset>
+
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments or suggestions here"></textarea>
+
+        <input type="button" id="submit-button" value="Submit">
+    </form>
+
+    <div id="thank-you-message" style="display:none;">
+        <h1>Thank you for submitting your survey!</h1>
+        
+    </div>
+
+    <script src="MelsTaqueriaSurvey.js"></script>
+</body>
+</html>
